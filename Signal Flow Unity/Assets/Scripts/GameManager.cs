@@ -40,28 +40,43 @@ public class GameManager : MonoBehaviour
         if (channel1[2].controlValue > 0f && !channel1[10].toggled)
         {
             ledNodes[0].Toggle(true);
-            if(channel1[14].controlValue > 0f)
+            
+            if (channel1[14].controlValue > 0f)
             {
                 ledNodes[1].Toggle(true);
-                if(channel1[12].toggled && channelMain[3].controlValue > 0f && !channelMain[2].toggled)
+                ledNodes[2].Toggle(true);
+
+                if(channel1[12].toggled)
                 {
-                    ledNodes[2].Toggle(true);
                     ledNodes[3].Toggle(true);
-                    ledNodes[4].Toggle(true);
-                    ledNodes[5].Toggle(true);
-                    StartCoroutine(GameOver());
+
+                    if(channelMain[3].controlValue > 0f && !channelMain[2].toggled)
+                    {
+                        
+                        ledNodes[4].Toggle(true);
+                        ledNodes[5].Toggle(true);
+                        ledNodes[6].Toggle(true);
+                        StartCoroutine(GameOver());
+                    }
+                    else
+                    {
+                        
+                        ledNodes[4].Toggle(false);
+                        ledNodes[5].Toggle(false);
+                        ledNodes[6].Toggle(false);
+                    }
+
                 }
                 else
                 {
-                    ledNodes[2].Toggle(false);
                     ledNodes[3].Toggle(false);
-                    ledNodes[4].Toggle(false);
-                    ledNodes[5].Toggle(false);
                 }
+               
             }
             else
             {
                 ledNodes[1].Toggle(false);
+                ledNodes[2].Toggle(false);
             }
         }
         else
@@ -72,6 +87,7 @@ public class GameManager : MonoBehaviour
             ledNodes[3].Toggle(false);
             ledNodes[4].Toggle(false);
             ledNodes[5].Toggle(false);
+            ledNodes[6].Toggle(false);
         }
 
     }

@@ -1,4 +1,4 @@
-const cacheName = "TheGeekTeach Studios-Signal Flow-0.1";
+const cacheName = "TheGeekTeach Studios-Signal Flow-1.0.1";
 const contentToCache = [
     "Build/SignalFlow.loader.js",
     "Build/SignalFlow.framework.js.unityweb",
