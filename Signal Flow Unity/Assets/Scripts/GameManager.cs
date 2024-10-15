@@ -37,11 +37,11 @@ public class GameManager : MonoBehaviour
             selectText.text = "Currently Selected: " + mouseSelection.clickedObject.name;
         }
 
-        if (channel1[2].controlValue > 0f && !channel1[10].toggled)
+        if (channel1[2].controlValue > 0f )
         {
             ledNodes[0].Toggle(true);
             
-            if (channel1[14].controlValue > 0f)
+            if (channel1[14].controlValue > 0f && !channel1[10].toggled)
             {
                 ledNodes[1].Toggle(true);
                 ledNodes[2].Toggle(true);
