@@ -19,12 +19,13 @@ public class GameManager : MonoBehaviour
     public GameObject selected, titleScreen, instructionScreen, finishText;
     public TextMeshProUGUI selectText, titleText;
     public Button start1Button, restartButton, start2Button;
-    public TextMeshProUGUI descriptionText, gameDoneText;
+    public TextMeshProUGUI descriptionText, gameDoneText, uIDText;
 
    
     void Start()
     {
         mouseSelection = GameObject.Find("Main Camera").GetComponent<MouseSelectionController>();
+        uIDText.text = "UID: " + Random.Range(0f, 9999999999999999999999999f);
     }
 
     // Update is called once per frame
@@ -35,12 +36,53 @@ public class GameManager : MonoBehaviour
         {
             selectText.text = "Currently Selected: " + mouseSelection.clickedObject.name;
         }
+
+        if (channel1[2].controlValue > 0f && !channel1[10].toggled)
+        {
+            ledNodes[0].Toggle(true);
+            if(channel1[14].controlValue > 0f)
+            {
+                ledNodes[1].Toggle(true);
+                if(channel1[12].toggled && channelMain[3].controlValue > 0f && !channelMain[2].toggled)
+                {
+                    ledNodes[2].Toggle(true);
+                    ledNodes[3].Toggle(true);
+                    ledNodes[4].Toggle(true);
+                    ledNodes[5].Toggle(true);
+                    StartCoroutine(GameOver());
+                }
+                else
+                {
+                    ledNodes[2].Toggle(false);
+                    ledNodes[3].Toggle(false);
+                    ledNodes[4].Toggle(false);
+                    ledNodes[5].Toggle(false);
+                }
+            }
+            else
+            {
+                ledNodes[1].Toggle(false);
+            }
+        }
+        else
+        {
+            ledNodes[0].Toggle(false);
+            ledNodes[1].Toggle(false);
+            ledNodes[2].Toggle(false);
+            ledNodes[3].Toggle(false);
+            ledNodes[4].Toggle(false);
+            ledNodes[5].Toggle(false);
+        }
+
     }
+
+
 
     IEnumerator GameOver()
     {
         yield return new WaitForSeconds(2);
         finishText.gameObject.SetActive(true);
+        
         selected.gameObject.SetActive(false);
     }//End of game text when game ends. Stops selected GameObject text. Delays game slightly
 

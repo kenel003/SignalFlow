@@ -42,6 +42,10 @@ public class LedControl : MonoBehaviour
     public void Toggle(bool toggleValue)
     {
         toggledOn = toggleValue;
+        if (!toggleValue)
+        {
+            UpdateColor(Color.clear);
+        }
     }
    
     public void SetIntensity(float value)

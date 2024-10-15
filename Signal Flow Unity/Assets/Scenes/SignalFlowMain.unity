@@ -1508,6 +1508,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!136 &93052382
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1707,6 +1712,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!1 &120771474
 GameObject:
   m_ObjectHideFlags: 0
@@ -1764,6 +1774,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!136 &120771477
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2123,6 +2138,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!136 &144862707
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2322,6 +2342,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!1 &145761836
 GameObject:
   m_ObjectHideFlags: 0
@@ -2379,6 +2404,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!136 &145761839
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2592,6 +2622,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!136 &151629520
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2878,6 +2913,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!1 &174427250
 GameObject:
   m_ObjectHideFlags: 0
@@ -2935,6 +2975,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!136 &174427253
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3008,6 +3053,140 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 174427250}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &175699063
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 175699064}
+  - component: {fileID: 175699066}
+  - component: {fileID: 175699065}
+  m_Layer: 0
+  m_Name: UID
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &175699064
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 175699063}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1142665478}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 659.55, y: 317.6}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &175699065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 175699063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 'UID: '
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: ea7e3b202ff35fa4cb0b3fdbce77bacf, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: ea7e3b202ff35fa4cb0b3fdbce77bacf, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 16.4
+  m_fontSizeBase: 16.4
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 1
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &175699066
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 175699063}
+  m_CullTransparentMesh: 1
 --- !u!1 &194736212
 GameObject:
   m_ObjectHideFlags: 0
@@ -3048,6 +3227,11 @@ MonoBehaviour:
   sliderMin: -1.801148
   sliderMax: -0.537
   sliderSpeed: 0.5
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!65 &194736214
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3192,6 +3376,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!136 &196373200
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3511,6 +3700,11 @@ MonoBehaviour:
   sliderMin: -1.801148
   sliderMax: -0.537
   sliderSpeed: 0.5
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!65 &204199380
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3728,6 +3922,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!1 &223100788
 GameObject:
   m_ObjectHideFlags: 0
@@ -3987,6 +4186,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!136 &249201559
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4200,6 +4404,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!136 &251636808
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4307,7 +4516,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 275}
+  m_AnchoredPosition: {x: 0, y: 323.4}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &257182294
@@ -4526,7 +4735,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 265559489}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -4683,6 +4892,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!1 &270429541
 GameObject:
   m_ObjectHideFlags: 0
@@ -4740,6 +4954,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!136 &270429544
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4939,6 +5158,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!1 &285719298
 GameObject:
   m_ObjectHideFlags: 0
@@ -5148,6 +5372,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!1 &292727374
 GameObject:
   m_ObjectHideFlags: 0
@@ -5205,6 +5434,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!136 &292727377
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -5349,7 +5583,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 650.34674, y: 334.00842}
+  m_AnchoredPosition: {x: 650.34674, y: 136.7}
   m_SizeDelta: {x: 200, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &304589257
@@ -5738,6 +5972,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!1 &315114551
 GameObject:
   m_ObjectHideFlags: 0
@@ -5878,6 +6117,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!136 &315369819
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -6164,6 +6408,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!1 &322405446
 GameObject:
   m_ObjectHideFlags: 0
@@ -6408,6 +6657,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!1 &327505997
 GameObject:
   m_ObjectHideFlags: 0
@@ -6631,6 +6885,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!136 &330360346
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -6834,6 +7093,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!1 &333783670
 GameObject:
   m_ObjectHideFlags: 0
@@ -6995,6 +7259,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!1 &339522120
 GameObject:
   m_ObjectHideFlags: 0
@@ -7052,6 +7321,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!136 &339522123
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -7182,6 +7456,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!136 &341925232
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -7509,6 +7788,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!136 &354925106
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -7708,6 +7992,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!1 &359528726
 GameObject:
   m_ObjectHideFlags: 0
@@ -7765,6 +8054,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!136 &359528729
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -8060,6 +8354,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!136 &371141738
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -8527,6 +8826,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!1 &418970395
 GameObject:
   m_ObjectHideFlags: 0
@@ -8667,6 +8971,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!136 &420197519
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -9183,6 +9492,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!136 &450929013
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -9913,6 +10227,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!136 &487620209
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -10279,6 +10598,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.28
   sliderSpeed: 0.5
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!1 &499794824
 GameObject:
   m_ObjectHideFlags: 0
@@ -10336,6 +10660,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!136 &499794827
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -10702,6 +11031,11 @@ MonoBehaviour:
   sliderMin: -2.726148
   sliderMax: -1.482
   sliderSpeed: 0.5
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!1 &522160885
 GameObject:
   m_ObjectHideFlags: 0
@@ -10793,6 +11127,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!136 &522493044
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -11006,6 +11345,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!136 &551325419
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -11541,6 +11885,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!136 &573163032
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -12155,6 +12504,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!1 &622143220
 GameObject:
   m_ObjectHideFlags: 0
@@ -12278,6 +12632,11 @@ MonoBehaviour:
   sliderMin: -1.801148
   sliderMax: -0.537
   sliderSpeed: 0.5
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!65 &624829116
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12505,6 +12864,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!136 &636112957
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -12898,6 +13262,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!136 &677940401
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -13350,6 +13719,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!1 &694973165
 GameObject:
   m_ObjectHideFlags: 0
@@ -13446,7 +13820,7 @@ GameObject:
   - component: {fileID: 700668196}
   - component: {fileID: 700668195}
   m_Layer: 5
-  m_Name: Other Start
+  m_Name: Start Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13563,7 +13937,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -200}
+  m_AnchoredPosition: {x: 0, y: -275.9}
   m_SizeDelta: {x: 200, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &702829683
@@ -13696,6 +14070,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -14012,6 +14391,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!136 &720128051
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -15013,6 +15397,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!136 &771426362
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -15212,6 +15601,110 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
+--- !u!1 &791483143
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 791483144}
+  - component: {fileID: 791483147}
+  - component: {fileID: 791483146}
+  - component: {fileID: 791483145}
+  m_Layer: 0
+  m_Name: Inner Wire
+  m_TagString: Dial
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &791483144
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 791483143}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 12.550001, z: 0}
+  m_LocalScale: {x: 0.54, y: 13.722757, z: 0.54}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1107650906}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &791483145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 791483143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b6d1ad3437a5424c945cfc8663a4d14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isOnByDefault: 0
+  intensityWiggle: 5
+  intensityWiggleRange: 8
+--- !u!23 &791483146
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 791483143}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: b8981156f12f05c4ab86664519617d33, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &791483147
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 791483143}
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &796565581
 GameObject:
   m_ObjectHideFlags: 0
@@ -15670,6 +16163,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!1 &871112771
 GameObject:
   m_ObjectHideFlags: 0
@@ -15727,6 +16225,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!136 &871112774
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -16363,6 +16866,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!1 &917971424
 GameObject:
   m_ObjectHideFlags: 0
@@ -16690,6 +17198,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!136 &925131391
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -16972,6 +17485,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!1 &941498131
 GameObject:
   m_ObjectHideFlags: 0
@@ -17099,6 +17617,11 @@ MonoBehaviour:
   sliderMin: -1.801148
   sliderMax: -0.537
   sliderSpeed: 0.5
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!1 &941826893
 GameObject:
   m_ObjectHideFlags: 0
@@ -17239,6 +17762,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!136 &946302975
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -18250,10 +18778,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Congratulations!\nYou Have Succesfuly compeletd \nSignal Flow!"
+  m_text: "Great job! \nSave a screenshot to of this screen and send to Mr. Carlson!"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ea7e3b202ff35fa4cb0b3fdbce77bacf, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: ea7e3b202ff35fa4cb0b3fdbce77bacf, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -18293,7 +18821,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 0
+  m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
@@ -18344,7 +18872,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 650.34674, y: 570}
-  m_SizeDelta: {x: 200, y: 50}
+  m_SizeDelta: {x: 905.4, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &996866288
 GameObject:
@@ -18962,6 +19490,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!136 &1036883889
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -19256,6 +19789,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!65 &1066303258
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19384,6 +19922,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!136 &1076987670
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -19666,6 +20209,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!1 &1104999953
 GameObject:
   m_ObjectHideFlags: 0
@@ -19805,6 +20353,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1780520291}
+  - {fileID: 791483144}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1121384444
@@ -19864,6 +20413,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!136 &1121384447
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -19994,7 +20548,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Sweet!
+  m_text: Start
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -20021,8 +20575,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
-  m_fontSizeBase: 30
+  m_fontSize: 43
+  m_fontSizeBase: 43
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -20211,6 +20765,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!136 &1132190195
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -20424,6 +20983,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!136 &1140695872
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -20526,9 +21090,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1739862879}
   - {fileID: 994520819}
   - {fileID: 304589256}
+  - {fileID: 175699064}
   m_Father: {fileID: 904397689}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1143727778
@@ -20661,6 +21225,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!1 &1148436301
 GameObject:
   m_ObjectHideFlags: 0
@@ -20984,6 +21553,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!1 &1161814998
 GameObject:
   m_ObjectHideFlags: 0
@@ -21506,6 +22080,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!136 &1197959788
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -21788,6 +22367,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!1 &1204395336
 GameObject:
   m_ObjectHideFlags: 0
@@ -21972,6 +22556,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!136 &1211385756
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -22171,6 +22760,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!1 &1213695385
 GameObject:
   m_ObjectHideFlags: 0
@@ -22297,6 +22891,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!1 &1218303016
 GameObject:
   m_ObjectHideFlags: 0
@@ -22420,6 +23019,11 @@ MonoBehaviour:
   sliderMin: -1.801148
   sliderMax: -0.537
   sliderSpeed: 0.5
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!65 &1218894244
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22716,6 +23320,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!1 &1236117280
 GameObject:
   m_ObjectHideFlags: 0
@@ -22772,6 +23381,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!136 &1236117283
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -22985,6 +23599,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!136 &1265809847
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -23184,6 +23803,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!1 &1285806041
 GameObject:
   m_ObjectHideFlags: 0
@@ -23310,6 +23934,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!1 &1291312558
 GameObject:
   m_ObjectHideFlags: 0
@@ -23365,6 +23994,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!65 &1291312561
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23769,6 +24403,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!1 &1334129563
 GameObject:
   m_ObjectHideFlags: 0
@@ -23861,6 +24500,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!136 &1339325663
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -24064,6 +24708,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!1 &1342182717
 GameObject:
   m_ObjectHideFlags: 0
@@ -24093,11 +24742,11 @@ Transform:
   m_GameObject: {fileID: 1342182717}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.148, y: -0.3000001, z: 2.596}
+  m_LocalPosition: {x: -0.1420002, y: -0.3000001, z: 1.9888518}
   m_LocalScale: {x: 0.22067101, y: 1.0177, z: 0.11583918}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1991785745}
+  m_Father: {fileID: 1747204980}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1342182719
 MonoBehaviour:
@@ -24119,6 +24768,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!65 &1342182720
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24316,6 +24970,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!1 &1343939776
 GameObject:
   m_ObjectHideFlags: 0
@@ -24790,8 +25449,8 @@ Transform:
   m_GameObject: {fileID: 384663232}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.5267713, y: 2.0083892, z: -1.479}
-  m_LocalScale: {x: 0.05, y: 0.14593285, z: 3.8772922}
+  m_LocalPosition: {x: 3.5267713, y: 2.0083892, z: 0.164}
+  m_LocalScale: {x: 0.05, y: 0.14593285, z: 7.091177}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 244098058}
@@ -25055,6 +25714,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!1 &1408546887
 GameObject:
   m_ObjectHideFlags: 0
@@ -25110,6 +25774,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!65 &1408546890
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25587,6 +26256,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!1 &1450706938
 GameObject:
   m_ObjectHideFlags: 0
@@ -25644,6 +26318,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!136 &1450706941
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -25843,6 +26522,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!1 &1484691271
 GameObject:
   m_ObjectHideFlags: 0
@@ -26210,7 +26894,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 175}
-  m_SizeDelta: {x: 200, y: 50}
+  m_SizeDelta: {x: 650, y: 58.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1515960881
 MonoBehaviour:
@@ -26232,10 +26916,22 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Follow the Lights by clicking on dials or sliders and moving them with
-    your arrow keys or WASD. This will help you become more familiar with the layout
-    of a Mixer Board and how the Signal Flows! If a Control doesn't work try the
-    next one!
+  m_text: 'Using the controls of the sound board, help your signal reach the main
+    L and R output lines!
+
+
+    Click on a control knob or slider to select it
+
+
+    Turn
+    control knobs with A (left) and D (right)
+
+
+    Slide faders with W (up) and
+    S (down)
+
+
+    Click on a button to toggle it on and off'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -26244,8 +26940,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4294965760
+  m_fontColor: {r: 0, g: 0.98021173, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -26262,15 +26958,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 28
+  m_fontSizeBase: 28
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 200
   m_fontStyle: 1
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 2048
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -26452,6 +27148,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!136 &1521134880
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -26651,6 +27352,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!1 &1527944242
 GameObject:
   m_ObjectHideFlags: 0
@@ -26708,6 +27414,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!136 &1527944245
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -26838,6 +27549,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!136 &1529675008
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -27466,6 +28182,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!136 &1545192774
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -27596,7 +28317,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: START!
+  m_text: Start
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -27931,6 +28652,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!136 &1569335277
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -28131,6 +28857,11 @@ MonoBehaviour:
   sliderMin: -2.119
   sliderMax: -0.822
   sliderSpeed: 0.5
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!1 &1583142457
 GameObject:
   m_ObjectHideFlags: 0
@@ -28370,6 +29101,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!136 &1589472569
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -28652,6 +29388,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!1 &1600436335
 GameObject:
   m_ObjectHideFlags: 0
@@ -28692,6 +29433,11 @@ MonoBehaviour:
   sliderMin: -1.801148
   sliderMax: -0.537
   sliderSpeed: 0.5
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!65 &1600436337
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28836,6 +29582,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!136 &1601376716
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -29032,6 +29783,11 @@ MonoBehaviour:
   sliderMin: -1.801148
   sliderMax: -0.537
   sliderSpeed: 0.5
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!65 &1605047186
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29361,6 +30117,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!136 &1637328513
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -29491,6 +30252,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!136 &1642306311
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -29704,6 +30470,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!136 &1665004190
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -29986,6 +30757,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!1 &1677157064
 GameObject:
   m_ObjectHideFlags: 0
@@ -30116,6 +30892,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!1 &1684311094
 GameObject:
   m_ObjectHideFlags: 0
@@ -30339,6 +31120,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!136 &1694930051
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -30942,81 +31728,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1727115550}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1739862878
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1739862879}
-  - component: {fileID: 1739862881}
-  - component: {fileID: 1739862880}
-  m_Layer: 5
-  m_Name: Image (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1739862879
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1739862878}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.60544646}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1142665478}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 650.34674, y: 454.0084}
-  m_SizeDelta: {x: 1500, y: 1350}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1739862880
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1739862878}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b2ea76caf7507ae4bab67f234a868104, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1739862881
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1739862878}
-  m_CullTransparentMesh: 1
 --- !u!1 &1740540273
 GameObject:
   m_ObjectHideFlags: 0
@@ -31172,6 +31883,7 @@ Transform:
   - {fileID: 687952806}
   - {fileID: 1291312559}
   - {fileID: 519483163}
+  - {fileID: 1342182718}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1750907754
@@ -31313,6 +32025,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!1 &1750963814
 GameObject:
   m_ObjectHideFlags: 0
@@ -31370,6 +32087,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!136 &1750963817
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -31718,7 +32440,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1bc3bc8039708e04fa11e1350678d463, type: 2}
+  - {fileID: 2100000, guid: 6f5ee1c3812dd2946904b8865cced978, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -31804,6 +32526,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!136 &1784288130
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -32365,17 +33092,139 @@ MonoBehaviour:
   - {fileID: 1386124389}
   - {fileID: 1780520292}
   - {fileID: 2082183544}
-  channel1: []
-  channel2: []
-  channel3: []
-  channel4: []
-  channel5_6: []
-  channel7_8: []
-  channel9_10: []
-  channel11_12: []
-  channelFX: []
-  channelSub1_2: []
-  channelMain: []
+  channel1:
+  - {fileID: 2099233297}
+  - {fileID: 268854379}
+  - {fileID: 1884280393}
+  - {fileID: 1677157071}
+  - {fileID: 1340564895}
+  - {fileID: 1143727785}
+  - {fileID: 317733758}
+  - {fileID: 1856524949}
+  - {fileID: 1160192115}
+  - {fileID: 218714208}
+  - {fileID: 522493043}
+  - {fileID: 1750907760}
+  - {fileID: 1202326799}
+  - {fileID: 774177150}
+  - {fileID: 941498137}
+  channel2:
+  - {fileID: 1408546889}
+  - {fileID: 309000437}
+  - {fileID: 1998953306}
+  - {fileID: 1521134879}
+  - {fileID: 341925231}
+  - {fileID: 120771476}
+  - {fileID: 359528728}
+  - {fileID: 1339325662}
+  - {fileID: 499794826}
+  - {fileID: 1601376715}
+  - {fileID: 720128050}
+  - {fileID: 416725400}
+  - {fileID: 858078655}
+  - {fileID: 286526524}
+  - {fileID: 1218894243}
+  channel3:
+  - {fileID: 2076055353}
+  - {fileID: 1265809846}
+  - {fileID: 1132190194}
+  - {fileID: 420197518}
+  - {fileID: 1121384446}
+  - {fileID: 2107447296}
+  - {fileID: 292727376}
+  - {fileID: 1076987669}
+  - {fileID: 1915897656}
+  - {fileID: 1197959787}
+  - {fileID: 1402865356}
+  - {fileID: 103863878}
+  - {fileID: 1213204766}
+  - {fileID: 1600436336}
+  channel4:
+  - {fileID: 1945568947}
+  - {fileID: 315369818}
+  - {fileID: 1527944244}
+  - {fileID: 946302974}
+  - {fileID: 1569335276}
+  - {fileID: 573163031}
+  - {fileID: 93052381}
+  - {fileID: 1450706940}
+  - {fileID: 196373199}
+  - {fileID: 371141737}
+  - {fileID: 334049647}
+  - {fileID: 1222255032}
+  - {fileID: 612757739}
+  - {fileID: 194736213}
+  channel5_6:
+  - {fileID: 1596700864}
+  - {fileID: 1981800672}
+  - {fileID: 354925105}
+  - {fileID: 330360345}
+  - {fileID: 251636807}
+  - {fileID: 450929012}
+  - {fileID: 1637328512}
+  - {fileID: 1545192773}
+  - {fileID: 1236117282}
+  - {fileID: 1093020557}
+  - {fileID: 1213695390}
+  - {fileID: 281409922}
+  - {fileID: 204199379}
+  channel7_8:
+  - {fileID: 2085797379}
+  - {fileID: 871112773}
+  - {fileID: 270429543}
+  - {fileID: 1036883888}
+  - {fileID: 771426361}
+  - {fileID: 151629519}
+  - {fileID: 249201558}
+  - {fileID: 636112956}
+  - {fileID: 1784288129}
+  - {fileID: 1450425878}
+  - {fileID: 1325366267}
+  - {fileID: 1481652666}
+  - {fileID: 2033045279}
+  channel9_10:
+  - {fileID: 145755711}
+  - {fileID: 1665004189}
+  - {fileID: 1642306310}
+  - {fileID: 144862706}
+  - {fileID: 1589472568}
+  - {fileID: 677940400}
+  - {fileID: 551325418}
+  - {fileID: 1750963816}
+  - {fileID: 925131390}
+  - {fileID: 1285657303}
+  - {fileID: 2143004039}
+  - {fileID: 324172575}
+  - {fileID: 624829115}
+  channel11_12:
+  - {fileID: 1671036202}
+  - {fileID: 145761838}
+  - {fileID: 1140695871}
+  - {fileID: 339522122}
+  - {fileID: 1694930050}
+  - {fileID: 1529675007}
+  - {fileID: 174427252}
+  - {fileID: 487620208}
+  - {fileID: 1211385755}
+  - {fileID: 1285806046}
+  - {fileID: 929790652}
+  - {fileID: 913163600}
+  - {fileID: 1605047185}
+  channelFX:
+  - {fileID: 1066303257}
+  - {fileID: 702829690}
+  - {fileID: 173775584}
+  - {fileID: 1572807287}
+  channelSub1_2:
+  - {fileID: 1837305377}
+  - {fileID: 1527763651}
+  - {fileID: 491059355}
+  channelMain:
+  - {fileID: 331055383}
+  - {fileID: 687952809}
+  - {fileID: 1291312560}
+  - {fileID: 519483165}
+  - {fileID: 1342182719}
   selected: {fileID: 1104999953}
   titleScreen: {fileID: 434739104}
   instructionScreen: {fileID: 1839598652}
@@ -32387,6 +33236,7 @@ MonoBehaviour:
   start2Button: {fileID: 700668195}
   descriptionText: {fileID: 1515960881}
   gameDoneText: {fileID: 994520817}
+  uIDText: {fileID: 175699065}
 --- !u!1 &1837305375
 GameObject:
   m_ObjectHideFlags: 0
@@ -32444,6 +33294,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!136 &1837305378
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -32852,6 +33707,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!1 &1861721222
 GameObject:
   m_ObjectHideFlags: 0
@@ -33195,7 +34055,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -120}
+  m_AnchoredPosition: {x: 0, y: -227.4}
   m_SizeDelta: {x: 200, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1872412965
@@ -33494,6 +34354,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!1 &1885967430
 GameObject:
   m_ObjectHideFlags: 0
@@ -33838,7 +34703,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 50}
+  m_AnchoredPosition: {x: 0, y: 232.6}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1902507504
@@ -33861,7 +34726,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Signal Flow
+  m_text: 'Signal Flow
+
+
+    Level 1'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -33870,8 +34738,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278255360
-  m_fontColor: {r: 0, g: 1, b: 0, a: 1}
+    rgba: 4294962688
+  m_fontColor: {r: 0, g: 0.9322505, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -34078,6 +34946,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!136 &1915897657
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -34257,6 +35130,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2082183543}
+  - {fileID: 2094359475}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1917954527
@@ -34634,6 +35508,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!1 &1979728572
 GameObject:
   m_ObjectHideFlags: 0
@@ -34774,6 +35653,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!136 &1981800673
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -34877,7 +35761,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1899870150}
-  - {fileID: 1342182718}
   - {fileID: 1066303256}
   - {fileID: 702829687}
   - {fileID: 173775581}
@@ -35190,6 +36073,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!136 &1998953307
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -35718,6 +36606,11 @@ MonoBehaviour:
   sliderMin: -1.801148
   sliderMax: -0.537
   sliderSpeed: 0.5
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!65 &2033045280
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -36260,6 +37153,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!1 &2082183542
 GameObject:
   m_ObjectHideFlags: 0
@@ -36353,7 +37251,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1bc3bc8039708e04fa11e1350678d463, type: 2}
+  - {fileID: 2100000, guid: 6f5ee1c3812dd2946904b8865cced978, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -36509,6 +37407,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!1 &2087662582
 GameObject:
   m_ObjectHideFlags: 0
@@ -36675,6 +37578,89 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2090935550}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &2094359474
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2094359475}
+  - component: {fileID: 2094359477}
+  - component: {fileID: 2094359476}
+  m_Layer: 0
+  m_Name: Inner Wire
+  m_TagString: Dial
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2094359475
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2094359474}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 12.55, z: 0}
+  m_LocalScale: {x: 0.54, y: 13.722757, z: 0.54}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1916173563}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &2094359476
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2094359474}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: b8981156f12f05c4ab86664519617d33, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &2094359477
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2094359474}
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &2099233295
 GameObject:
   m_ObjectHideFlags: 0
@@ -36730,6 +37716,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!65 &2099233298
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -36858,6 +37849,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!136 &2107447297
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -37306,6 +38302,11 @@ MonoBehaviour:
   sliderMin: 0
   sliderMax: 1.25
   sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  controlValue: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

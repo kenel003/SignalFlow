@@ -16,17 +16,19 @@ public class GenericControl : MonoBehaviour
     [SerializeField] private float sliderMax = 1.25f;
     [SerializeField] private float sliderSpeed = .15f;
     private float dialRot = 0;
-    private float sliderValue = -3f, sliderPercent = 0f, dialPercent = 0f;
-    private bool toggled = false;
-    private float controlValue = 0;
+    public float sliderValue = 0f, sliderPercent = 0f, dialPercent = 0f;
+    public bool toggled = false;
+    public float controlValue = 0;
     void Start()
     {
         mouseSelection = GameObject.Find("Main Camera").GetComponent<MouseSelectionController>();
+        sliderValue = sliderMin;
     }
 
     // Update is called once per frame
     void Update()
     {
+        
         if (mouseSelection.clickedObject == gameObject )
         {
             if (mouseSelection.clickedObject.CompareTag("Dial"))
@@ -39,7 +41,7 @@ public class GenericControl : MonoBehaviour
                 {
                     dialRot = dialMax;
                 }
-                if ((Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D)) &&(dialRot >= dialMin && dialRot <= dialMax))
+                if (Input.GetAxis("Horizontal") != 0 &&(dialRot >= dialMin && dialRot <= dialMax))
                 {
                     controlValue = Input.GetAxis("Horizontal");
                     if (controlValue < 0)
@@ -52,6 +54,7 @@ public class GenericControl : MonoBehaviour
                     }
                     //Sets dial rotation based on dialRot
                     transform.localEulerAngles = new Vector3(mouseSelection.clickedObject.transform.localEulerAngles.x, dialRot, mouseSelection.clickedObject.transform.localEulerAngles.z);
+                    controlValue = dialRot / (dialMax - dialMin);
                 }/*If the dialRot is inside the bounds, the user can change it with the arrow keys
                   * The dialRot is then used to set a new Y axis EulerAngle*/
             }//If the game object is a dial, then it can move.
@@ -81,6 +84,7 @@ public class GenericControl : MonoBehaviour
                         else sliderValue = sliderMin;
                     }
                     transform.localPosition = new Vector3(transform.localPosition.x, transform.localPosition.y, sliderValue);
+                    controlValue = (sliderValue - sliderMin) / (sliderMax - sliderMin);
                 }
             }
 
