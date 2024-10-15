@@ -77,6 +77,10 @@ public class GameManager : MonoBehaviour
             {
                 ledNodes[1].Toggle(false);
                 ledNodes[2].Toggle(false);
+                ledNodes[3].Toggle(false);
+                ledNodes[4].Toggle(false);
+                ledNodes[5].Toggle(false);
+                ledNodes[6].Toggle(false);
             }
         }
         else
