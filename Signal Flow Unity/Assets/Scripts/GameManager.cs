@@ -14,22 +14,21 @@ public class GameManager : MonoBehaviour
     public GameObject selectionParticle;
     //Dial Scripts
     public LedControl[] ledNodes;
-    public GenericControl[] channel1, channel2, channel3, channel4, channel5_6, channel7_8, channel9_10, channel11_12, channelFX, channelSub1_2, channelMain;
+    public GenericControl[] channel1, channel2, channel3, channel4, channel5_6, channel7_8, channel9_10, channel11_12, channelFX, channelSub1_2, channelMain, incorrectControls;
     // Variables for Text
     public GameObject selected, titleScreen, instructionScreen, finishText;
     public TextMeshProUGUI selectText, titleText;
     public Button start1Button, restartButton, start2Button;
     public TextMeshProUGUI descriptionText, gameDoneText, uIDText;
-    private bool followSlider = false;
-
-
+    private bool followSlider = false, gameOver = false;
+    public bool isQuizMode = false;
+    public TextMeshProUGUI incorrectItemsText;
 
     void Start()
     {
         mouseSelection = GameObject.Find("Main Camera").GetComponent<MouseSelectionController>();
-        
         uIDText.text = "UID: " + Random.Range(0f, 9999999999999999999999999f);
-
+        if (SceneManager.GetActiveScene().name == "SignalFlowLevel1Quiz") isQuizMode = true;
     }
 
     // Update is called once per frame
@@ -38,7 +37,7 @@ public class GameManager : MonoBehaviour
 
 
         //Tells User what Game Object is selected.
-        if ((mouseSelection.clickedObject.CompareTag("Dial") || mouseSelection.clickedObject.CompareTag("Slider") || mouseSelection.clickedObject.CompareTag("Toggle")) && mouseSelection.newClick)
+        if ((mouseSelection.clickedObject.CompareTag("Dial") || mouseSelection.clickedObject.CompareTag("Slider") || mouseSelection.clickedObject.CompareTag("Toggle")) && mouseSelection.newClick&& !gameOver)
         {
             mouseSelection.newClick = false;
             selectText.text = "Currently Selected: " + mouseSelection.clickedObject.name;
@@ -83,6 +82,7 @@ public class GameManager : MonoBehaviour
                                         ledNodes[4].Toggle(true);
                                         ledNodes[5].Toggle(true);
                                         ledNodes[6].Toggle(true);
+                                        gameOver = true;
                                         StartCoroutine(GameOver());
                                     }
                                     else //main slider is 0 or muted
@@ -140,11 +140,24 @@ public class GameManager : MonoBehaviour
 
     IEnumerator GameOver()
     {
+        int wrongControlsUsed = 0;
+        foreach (GenericControl control in incorrectControls)
+        {
+            if (control.controlValue != 0 && !control.ToggleLEDOnAtStart)
+            {
+                wrongControlsUsed++;
+            }
+            else if (control.ToggleLEDOnAtStart && control.controlValue == 0)
+            {
+                wrongControlsUsed++;
+            }
+        }
+        incorrectItemsText.text = " You used " + wrongControlsUsed + " incorrect controls.";
         yield return new WaitForSeconds(2);
         finishText.gameObject.SetActive(true);
-        
         selected.gameObject.SetActive(false);
-    }//End of game text when game ends. Stops selected GameObject text. Delays game slightly
+
+    }//End of game text when game ends. 
 
     public void Start1()
     {
