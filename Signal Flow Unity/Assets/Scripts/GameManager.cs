@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
 
     //Selector script
     private MouseSelectionController mouseSelection;
-
+    public GameObject selectionParticle;
     //Dial Scripts
     public LedControl[] ledNodes;
     public GenericControl[] channel1, channel2, channel3, channel4, channel5_6, channel7_8, channel9_10, channel11_12, channelFX, channelSub1_2, channelMain;
@@ -20,21 +20,45 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI selectText, titleText;
     public Button start1Button, restartButton, start2Button;
     public TextMeshProUGUI descriptionText, gameDoneText, uIDText;
+    private bool followSlider = false;
 
-   
+
+
     void Start()
     {
         mouseSelection = GameObject.Find("Main Camera").GetComponent<MouseSelectionController>();
+        
         uIDText.text = "UID: " + Random.Range(0f, 9999999999999999999999999f);
+
     }
 
     // Update is called once per frame
     void Update()
     {
+
+
         //Tells User what Game Object is selected.
-        if (mouseSelection.clickedObject.CompareTag("Dial") || mouseSelection.clickedObject.CompareTag("Slider") || mouseSelection.clickedObject.CompareTag("Toggle"))
+        if ((mouseSelection.clickedObject.CompareTag("Dial") || mouseSelection.clickedObject.CompareTag("Slider") || mouseSelection.clickedObject.CompareTag("Toggle")) && mouseSelection.newClick)
         {
+            mouseSelection.newClick = false;
             selectText.text = "Currently Selected: " + mouseSelection.clickedObject.name;
+            selectionParticle.SetActive(false);
+            selectionParticle.transform.localPosition = new Vector3(mouseSelection.clickedObject.transform.position.x, 0.4f , mouseSelection.clickedObject.transform.position.z);
+            selectionParticle.SetActive(true);
+            if (mouseSelection.clickedObject.CompareTag("Slider"))
+            {
+                followSlider = true;
+            }
+            else
+            {
+                followSlider = false;
+            }
+            
+        }
+
+        if (followSlider)
+        {
+            selectionParticle.transform.localPosition = new Vector3(mouseSelection.clickedObject.transform.position.x, 0.4f, mouseSelection.clickedObject.transform.position.z);
         }
 
         if (channel1[2].controlValue > 0f )

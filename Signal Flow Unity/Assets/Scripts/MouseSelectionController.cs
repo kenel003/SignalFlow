@@ -6,7 +6,7 @@ using UnityEngine.UIElements;
 public class MouseSelectionController : MonoBehaviour
 {
     public GameObject clickedObject;
-    public bool newClick = false;
+    public bool newClick = false, newClickForToggle = false;
 
     // Update is called once per frame
     void Update()
@@ -21,6 +21,8 @@ public class MouseSelectionController : MonoBehaviour
                 {
                     clickedObject = raycastHit.transform.gameObject;
                     newClick = true;
+                    newClickForToggle = true;
+                    Debug.Log("Click happened once");
                 }
             }
        } 

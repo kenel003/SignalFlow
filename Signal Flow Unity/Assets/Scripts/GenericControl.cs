@@ -19,16 +19,31 @@ public class GenericControl : MonoBehaviour
     public float sliderValue = 0f, sliderPercent = 0f, dialPercent = 0f;
     public bool toggled = false;
     public float controlValue = 0;
+    public bool useToggleLED = false, ToggleLEDOnAtStart= false;
+    public ToggledLED connectedToggleLED;
     void Start()
     {
         mouseSelection = GameObject.Find("Main Camera").GetComponent<MouseSelectionController>();
         sliderValue = sliderMin;
+        if (useToggleLED && ToggleLEDOnAtStart)
+        {
+            connectedToggleLED.Toggled(true);
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        //If this control is connected to a toggled LED light, turn it on if the control is at something other than zero.
+        if(controlValue > 0 && useToggleLED)
+        {
+            connectedToggleLED.Toggled(true);
+        }
+        else if (useToggleLED)
+        {
+            connectedToggleLED.Toggled(false);
+        }
+
         if (mouseSelection.clickedObject == gameObject )
         {
             if (mouseSelection.clickedObject.CompareTag("Dial"))
@@ -88,13 +103,14 @@ public class GenericControl : MonoBehaviour
                 }
             }
 
-            else if (mouseSelection.clickedObject.CompareTag("Toggle") && mouseSelection.newClick) //needed newClick to make sure toggles stay
+            else if (mouseSelection.clickedObject.CompareTag("Toggle") && mouseSelection.newClickForToggle) //needed newClick to make sure toggles stay
             {
                 //play click sound
-                mouseSelection.newClick = false; //keep toggle from being toggled until the next new click of the mouse
+                mouseSelection.newClickForToggle = false; //keep toggle from being toggled until the next new click of the mouse
                 if (transform.localPosition.y >= toggleUpHeight) //toggle currently off
                 {
                     toggled = true; //turns toggle on
+                    controlValue = 1;
                     Debug.Log("Toggled ON at original Position: " + transform.localPosition.y);
                     transform.localPosition = new Vector3(transform.localPosition.x, toggleDownHeight, transform.localPosition.z);
                 }
@@ -102,6 +118,7 @@ public class GenericControl : MonoBehaviour
                 {
                     Debug.Log("Toggled OFF at position: " + transform.localPosition.y);
                     toggled = false; //turns toggle off
+                    controlValue = 0;
                     transform.localPosition = new Vector3(transform.localPosition.x, toggleUpHeight, transform.localPosition.z);
                 }
             }
