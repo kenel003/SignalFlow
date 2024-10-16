@@ -17,7 +17,7 @@ public class MouseSelectionController : MonoBehaviour
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out raycastHit, 100f))
             {
-                if(raycastHit.transform != null)
+                if(raycastHit.transform != null && !raycastHit.transform.CompareTag("Untagged"))
                 {
                     clickedObject = raycastHit.transform.gameObject;
                     newClick = true;

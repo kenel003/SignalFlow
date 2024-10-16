@@ -61,46 +61,59 @@ public class GameManager : MonoBehaviour
             selectionParticle.transform.localPosition = new Vector3(mouseSelection.clickedObject.transform.position.x, 0.4f, mouseSelection.clickedObject.transform.position.z);
         }
 
-        if (channel1[2].controlValue > 0f )
+        if (channel1[2].controlValue > 0f )//GAIN IS ABOVE 0, else turns off all
         {
-            ledNodes[0].Toggle(true);
+            ledNodes[0].Toggle(true); //Turns on GAIN and EQ light
             
-            if (channel1[14].controlValue > 0f && !channel1[10].toggled)
+            if (!channel1[10].toggled)//MUTE is off, turns on light next to fader
             {
-                ledNodes[1].Toggle(true);
-                ledNodes[2].Toggle(true);
+                ledNodes[1].Toggle(true); //Mute light on
 
-                if(channel1[12].toggled)
-                {
-                    ledNodes[3].Toggle(true);
+                if (channel1[14].controlValue > 0f) //FADER IS ABOVE 0
+                            {
+                                ledNodes[2].Toggle(true); //Fader light on
 
-                    if(channelMain[3].controlValue > 0f && !channelMain[2].toggled)
-                    {
+                                if(channel1[12].toggled) //LR Bus enabled
+                                {
+                                    ledNodes[3].Toggle(true); //LR Bus light on
+
+                                    if(channelMain[3].controlValue > 0f && !channelMain[2].toggled) //MAIN fader is above 0 and not muted
+                                    {
                         
-                        ledNodes[4].Toggle(true);
-                        ledNodes[5].Toggle(true);
-                        ledNodes[6].Toggle(true);
-                        StartCoroutine(GameOver());
-                    }
-                    else
-                    {
+                                        ledNodes[4].Toggle(true);
+                                        ledNodes[5].Toggle(true);
+                                        ledNodes[6].Toggle(true);
+                                        StartCoroutine(GameOver());
+                                    }
+                                    else //main slider is 0 or muted
+                                    {
                         
-                        ledNodes[4].Toggle(false);
-                        ledNodes[5].Toggle(false);
-                        ledNodes[6].Toggle(false);
-                    }
+                                        ledNodes[4].Toggle(false);
+                                        ledNodes[5].Toggle(false);
+                                        ledNodes[6].Toggle(false);
+                                    }
 
-                }
-                else
+                                } //LR Bus enabled
+                                else //LR Bus disabled, turns off all lights after
+                                {
+                                    ledNodes[3].Toggle(false);
+                                    ledNodes[4].Toggle(false);
+                                    ledNodes[5].Toggle(false);
+                                    ledNodes[6].Toggle(false);
+                                }//LR Bus disabled, turns off all lights after
+                            }
+                else //FADER is 0
                 {
+                    ledNodes[2].Toggle(false);//fader light and all after is off
                     ledNodes[3].Toggle(false);
                     ledNodes[4].Toggle(false);
                     ledNodes[5].Toggle(false);
                     ledNodes[6].Toggle(false);
-                }
-               
-            }
-            else
+                } 
+            }//MUTE is off, turns on light next to fader
+            
+            
+            else//MUTE is ON, turn off all lights except GAIN and EQ light (index 0)
             {
                 ledNodes[1].Toggle(false);
                 ledNodes[2].Toggle(false);
@@ -108,9 +121,9 @@ public class GameManager : MonoBehaviour
                 ledNodes[4].Toggle(false);
                 ledNodes[5].Toggle(false);
                 ledNodes[6].Toggle(false);
-            }
+            }//MUTE is ON, turn off all lights except GAIN and EQ light (index 0)
         }
-        else
+        else //turns off all lights when GAIN is not above 0
         {
             ledNodes[0].Toggle(false);
             ledNodes[1].Toggle(false);
@@ -145,9 +158,12 @@ public class GameManager : MonoBehaviour
         selected.gameObject.SetActive(true);
     }//Ends instruction screen. Starts selected object text. On Button press.
 
-    
+    public void QuizModeLevel()
+    {
+        SceneManager.LoadScene("SignalFlowLevel1Quiz");
+    }
     public void RestartGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene("SignalFlowLevel1Practice");
     }//If the restart button is pressed, restart the game.
 }
