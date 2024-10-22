@@ -372,6 +372,145 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 13231107}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &13597632
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 13597633}
+  - component: {fileID: 13597635}
+  - component: {fileID: 13597634}
+  m_Layer: 5
+  m_Name: Instructions (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &13597633
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 13597632}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1839598653}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 140.8, y: 59.6}
+  m_SizeDelta: {x: 1093.6, y: 58.7}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &13597634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 13597632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "\u25CF Use your mouse/trackpad to click on a \u201Cpot\u201D (control
+    knob) or \n   \u201Cfader\u201D (slider) to select it.\r\n\n\u25CF Turn the \u201Cpots\u201D/knobs
+    with the left & right arrow keys or A & D keys.\r\n\n\u25CF Slide the faders
+    with the up & down arrow keys or W & S keys.\r\n\n\u25CF Click on a button to
+    toggle it on and off.\r\n\n\u25CF To reset a \"pot\"/knob to its original position,
+    press the R key\n\n"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278225663
+  m_fontColor: {r: 1, g: 0.54082924, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 22.5
+  m_fontSizeBase: 22.5
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 200
+  m_fontStyle: 1
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 2048
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &13597635
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 13597632}
+  m_CullTransparentMesh: 1
 --- !u!1 &14182743
 GameObject:
   m_ObjectHideFlags: 0
@@ -1646,6 +1785,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -1853,6 +1993,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -1918,6 +2059,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -2300,6 +2442,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -2507,6 +2650,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -2572,6 +2716,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -2793,6 +2938,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -3087,6 +3233,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -3152,6 +3299,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -3482,6 +3630,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -3634,6 +3783,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -3961,6 +4111,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -4186,6 +4337,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -4454,6 +4606,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -4675,6 +4828,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -4786,8 +4940,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 323.4}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 0, y: 346.8}
+  m_SizeDelta: {x: 241.6, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &257182294
 MonoBehaviour:
@@ -5166,6 +5320,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -5231,6 +5386,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -5438,6 +5594,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -5655,6 +5812,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -5720,6 +5878,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -6261,6 +6420,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -6409,6 +6569,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 1
   ToggleLEDOnAtStart: 0
@@ -6703,6 +6864,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -6970,6 +7132,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -7201,6 +7364,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -7412,6 +7576,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -7581,6 +7746,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -7646,6 +7812,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -7784,6 +7951,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -8119,6 +8287,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -8326,6 +8495,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -8391,6 +8561,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -8695,6 +8866,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 1
+  inputCooldown: 0
   controlValue: 1
   useToggleLED: 1
   ToggleLEDOnAtStart: 1
@@ -9184,6 +9356,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -9332,6 +9505,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -9872,6 +10046,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -10609,6 +10784,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -10983,6 +11159,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -11048,6 +11225,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -11422,6 +11600,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -11522,6 +11701,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 1
+  inputCooldown: 0
   controlValue: 1
   useToggleLED: 1
   ToggleLEDOnAtStart: 1
@@ -11757,6 +11937,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -12315,6 +12496,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -12937,6 +13119,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -13068,6 +13251,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -13303,6 +13487,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -13704,6 +13889,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -14164,6 +14350,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -14381,7 +14568,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -275.9}
+  m_AnchoredPosition: {x: 0, y: -322.9}
   m_SizeDelta: {x: 200, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &702829683
@@ -14518,6 +14705,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -14843,6 +15031,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 1
+  inputCooldown: 0
   controlValue: 1
   useToggleLED: 1
   ToggleLEDOnAtStart: 1
@@ -15866,6 +16055,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -16073,6 +16263,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -16772,6 +16963,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -16837,6 +17029,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 1
   ToggleLEDOnAtStart: 0
@@ -17482,6 +17675,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -17818,6 +18012,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 1
+  inputCooldown: 0
   controlValue: 1
   useToggleLED: 1
   ToggleLEDOnAtStart: 1
@@ -18122,6 +18317,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -18257,6 +18453,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -18405,6 +18602,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -20151,6 +20349,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -20453,6 +20652,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 1
   ToggleLEDOnAtStart: 0
@@ -20589,6 +20789,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -20879,6 +21080,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -21086,6 +21288,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -21441,6 +21644,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -21662,6 +21866,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -21909,6 +22114,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -22240,6 +22446,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -22786,6 +22993,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 1
+  inputCooldown: 0
   controlValue: 1
   useToggleLED: 1
   ToggleLEDOnAtStart: 1
@@ -23090,6 +23298,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -23283,6 +23492,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 1
+  inputCooldown: 0
   controlValue: 1
   useToggleLED: 1
   ToggleLEDOnAtStart: 1
@@ -23504,6 +23714,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -23638,6 +23849,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -23769,6 +23981,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -24073,6 +24286,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -24138,6 +24352,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 1
+  inputCooldown: 0
   controlValue: 1
   useToggleLED: 1
   ToggleLEDOnAtStart: 1
@@ -24373,6 +24588,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 1
   ToggleLEDOnAtStart: 0
@@ -24580,6 +24796,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -24714,6 +24931,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -24777,6 +24995,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 1
   ToggleLEDOnAtStart: 0
@@ -24946,7 +25165,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1841faf9f2a37b54088ce316d978c7c6, type: 2}
+  - {fileID: 2100000, guid: 184c2bf381311fb448e0a474521bbf48, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -25189,6 +25408,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -25289,6 +25509,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -25500,6 +25721,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -25563,6 +25785,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 1
   ToggleLEDOnAtStart: 0
@@ -25768,6 +25991,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -26649,6 +26873,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -26712,6 +26937,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -27197,6 +27423,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -27262,6 +27489,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -27469,6 +27697,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -27639,6 +27868,141 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1487168179}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1495691928
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1495691929}
+  - component: {fileID: 1495691931}
+  - component: {fileID: 1495691930}
+  m_Layer: 5
+  m_Name: Instructions (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1495691929
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1495691928}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1839598653}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -250.5}
+  m_SizeDelta: {x: 1092.2, y: 58.7}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1495691930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1495691928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Notice how the colored lights represent the audio signal path through the
+    console.
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294965760
+  m_fontColor: {r: 0, g: 0.9803922, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 25.6
+  m_fontSizeBase: 25.6
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 200
+  m_fontStyle: 1
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 2048
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1495691931
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1495691928}
+  m_CullTransparentMesh: 1
 --- !u!1 &1500689653
 GameObject:
   m_ObjectHideFlags: 0
@@ -27839,8 +28203,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 175}
-  m_SizeDelta: {x: 650, y: 58.7}
+  m_AnchoredPosition: {x: 0, y: 261.4}
+  m_SizeDelta: {x: 1092.2, y: 58.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1515960881
 MonoBehaviour:
@@ -27862,22 +28226,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Using the controls of the sound board, help your signal reach the main
-    L and R output lines!
-
-
-    Click on a control knob or slider to select it
-
-
-    Turn
-    control knobs with A (left) and D (right)
-
-
-    Slide faders with W (up) and
-    S (down)
-
-
-    Click on a button to toggle it on and off'
+  m_text: "\u201CBasic Left/Right Output\u201D\r\n\r\nUse the controls of the mixing
+    console to get your audio signal flow to move from the pink cable in Channel
+    1 to the cables that are plugged into the Main Left/Right Outputs of the console.\r\n\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -27904,8 +28255,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 28
-  m_fontSizeBase: 28
+  m_fontSize: 25.6
+  m_fontSizeBase: 25.6
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -28098,6 +28449,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -28305,6 +28657,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -28370,6 +28723,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -28508,6 +28862,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -29144,6 +29499,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -29617,6 +29973,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -29825,6 +30182,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -30071,6 +30429,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -30361,6 +30720,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -30409,6 +30769,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -30561,6 +30922,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -30765,6 +31127,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -31102,6 +31465,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -31240,6 +31604,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -31461,6 +31826,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 1
   ToggleLEDOnAtStart: 0
@@ -31751,6 +32117,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -31889,6 +32256,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -32120,6 +32488,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -33043,6 +33412,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -33108,6 +33478,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -33566,6 +33937,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 1
+  inputCooldown: 0
   controlValue: 1
   useToggleLED: 1
   ToggleLEDOnAtStart: 1
@@ -34475,6 +34847,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -34666,13 +35039,15 @@ RectTransform:
   - {fileID: 1148436302}
   - {fileID: 257182293}
   - {fileID: 1515960880}
+  - {fileID: 13597633}
+  - {fileID: 1495691929}
   - {fileID: 700668198}
   m_Father: {fileID: 904397689}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 102.44, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1839974238
 GameObject:
@@ -34891,6 +35266,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -35541,6 +35917,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 1
   ToggleLEDOnAtStart: 0
@@ -36151,6 +36528,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -36716,6 +37094,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -36922,7 +37301,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1841faf9f2a37b54088ce316d978c7c6, type: 2}
+  - {fileID: 2100000, guid: d2f6c6d261ec30d4788e33a9951a2ef5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -37096,6 +37475,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 1
   ToggleLEDOnAtStart: 0
@@ -37519,6 +37899,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 1
   ToggleLEDOnAtStart: 0
@@ -38055,6 +38436,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -38196,7 +38578,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1841faf9f2a37b54088ce316d978c7c6, type: 2}
+  - {fileID: 2100000, guid: 3b4c5d27b5cff014cb10d2aa7ba03eba, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -38605,6 +38987,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -38862,6 +39245,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -39174,6 +39558,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -39310,6 +39695,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
@@ -39899,6 +40285,7 @@ MonoBehaviour:
   sliderPercent: 0
   dialPercent: 0
   toggled: 0
+  inputCooldown: 0
   controlValue: 0
   useToggleLED: 0
   ToggleLEDOnAtStart: 0

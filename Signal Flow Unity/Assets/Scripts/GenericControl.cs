@@ -17,7 +17,7 @@ public class GenericControl : MonoBehaviour
     [SerializeField] private float sliderSpeed = .15f;
     private float dialRot = 0;
     public float sliderValue = 0f, sliderPercent = 0f, dialPercent = 0f;
-    public bool toggled = false;
+    public bool toggled = false, inputCooldown = false;
     public float controlValue = 0;
     public bool useToggleLED = false, ToggleLEDOnAtStart= false;
     public ToggledLED connectedToggleLED;
@@ -31,6 +31,11 @@ public class GenericControl : MonoBehaviour
         }
     }
 
+    IEnumerator InputCooldown()
+    {
+        yield return new WaitForSeconds(1);
+        inputCooldown = false;
+    }
     // Update is called once per frame
     void Update()
     {
@@ -48,6 +53,7 @@ public class GenericControl : MonoBehaviour
         {
             if (mouseSelection.clickedObject.CompareTag("Dial"))
             {
+                
                 if (dialRot < dialMin)
                 {
                     dialRot = dialMin;
@@ -56,8 +62,17 @@ public class GenericControl : MonoBehaviour
                 {
                     dialRot = dialMax;
                 }
-                if (Input.GetAxis("Horizontal") != 0 &&(dialRot >= dialMin && dialRot <= dialMax))
+                if (Input.GetKeyDown(KeyCode.R))
                 {
+                    inputCooldown = true;
+                    StartCoroutine(InputCooldown());
+                    dialRot = 0;
+                    transform.localEulerAngles = new Vector3(mouseSelection.clickedObject.transform.localEulerAngles.x, dialRot, mouseSelection.clickedObject.transform.localEulerAngles.z);
+                    controlValue = 0;
+                }
+                if (Input.GetAxis("Horizontal") != 0 &&(dialRot >= dialMin && dialRot <= dialMax) && !inputCooldown)
+                {
+                    
                     controlValue = Input.GetAxis("Horizontal");
                     if (controlValue < 0)
                     {
@@ -72,6 +87,8 @@ public class GenericControl : MonoBehaviour
                     controlValue = dialRot / (dialMax - dialMin);
                 }/*If the dialRot is inside the bounds, the user can change it with the arrow keys
                   * The dialRot is then used to set a new Y axis EulerAngle*/
+
+                
             }//If the game object is a dial, then it can move.
 
             else if (mouseSelection.clickedObject.CompareTag("Slider"))
