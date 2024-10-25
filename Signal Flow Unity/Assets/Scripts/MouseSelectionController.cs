@@ -7,11 +7,14 @@ public class MouseSelectionController : MonoBehaviour
 {
     public GameObject clickedObject;
     public bool newClick = false, newClickForToggle = false;
+    [SerializeField] private GameManager gameManager;
+
+   
 
     // Update is called once per frame
     void Update()
     {
-       if (Input.GetMouseButtonDown(0))
+       if (Input.GetMouseButtonDown(0) && !gameManager.guiUp)
        {
             RaycastHit raycastHit;
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);

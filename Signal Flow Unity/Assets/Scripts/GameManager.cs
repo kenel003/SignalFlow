@@ -23,12 +23,18 @@ public class GameManager : MonoBehaviour
     private bool followSlider = false, gameOver = false;
     public bool isQuizMode = false;
     public TextMeshProUGUI incorrectItemsText;
+    public bool guiUp = true;
 
     void Start()
     {
+        
         mouseSelection = GameObject.Find("Main Camera").GetComponent<MouseSelectionController>();
-        uIDText.text = "UID: " + Random.Range(0f, 9999999999999999999999999f);
-        if (SceneManager.GetActiveScene().name == "SignalFlowLevel1Quiz") isQuizMode = true;
+        uIDText.text = "UID: " + Random.Range(0, 9999999999999999999);
+        if (SceneManager.GetActiveScene().name == "SignalFlowLevel1Quiz")
+        {
+            isQuizMode = true;
+            guiUp = false;
+        }
     }
 
     // Update is called once per frame
@@ -55,7 +61,7 @@ public class GameManager : MonoBehaviour
             
         }
 
-        if (followSlider)
+        if ( followSlider)
         {
             selectionParticle.transform.localPosition = new Vector3(mouseSelection.clickedObject.transform.position.x, 0.4f, mouseSelection.clickedObject.transform.position.z);
         }
@@ -140,6 +146,7 @@ public class GameManager : MonoBehaviour
 
     IEnumerator GameOver()
     {
+        guiUp = true;
         int wrongControlsUsed = 0;
         foreach (GenericControl control in incorrectControls)
         {
@@ -154,6 +161,7 @@ public class GameManager : MonoBehaviour
         }
         incorrectItemsText.text = " You used " + wrongControlsUsed + " incorrect controls.";
         yield return new WaitForSeconds(2);
+        guiUp = true;
         finishText.gameObject.SetActive(true);
         selected.gameObject.SetActive(false);
 
@@ -161,6 +169,7 @@ public class GameManager : MonoBehaviour
 
     public void Start1()
     {
+        guiUp = true;
         titleScreen.gameObject.SetActive(false);
         instructionScreen.gameObject.SetActive(true);
     }//Goes through starts screen and instruction screen. On Button press.
@@ -168,6 +177,7 @@ public class GameManager : MonoBehaviour
     public void Start2()
     {
         instructionScreen.gameObject.SetActive(false);
+        guiUp = false;
         selected.gameObject.SetActive(true);
     }//Ends instruction screen. Starts selected object text. On Button press.
 
