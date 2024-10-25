@@ -6027,7 +6027,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 649.1, y: 77.9}
+  m_AnchoredPosition: {x: 649.1, y: 121.4}
   m_SizeDelta: {x: 200, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &304589257
@@ -9681,7 +9681,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &434739105
 RectTransform:
   m_ObjectHideFlags: 0
@@ -19619,10 +19619,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Great job! Take a screenshot and send it to your teacher!\n\n\nIf you
-    used any incorrect controls, click \u201CRestart!\u201D to discover what you
-    did wrong and try for a perfect score. Once you are fully comfortable with this
-    Practice Mode, move onto the Quiz Mode.\n"
+  m_text: "Great job!\n\n\nIf you used any incorrect controls, click \u201CRestart!\u201D
+    to discover what you did wrong and try for a perfect score. Once you are fully
+    comfortable with this Practice Mode, move onto the Quiz Mode.\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ea7e3b202ff35fa4cb0b3fdbce77bacf, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: ea7e3b202ff35fa4cb0b3fdbce77bacf, type: 2}
@@ -21963,7 +21962,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1142665478
 Transform:
   m_ObjectHideFlags: 0
@@ -26297,7 +26296,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 664.6, y: 584.7}
+  m_AnchoredPosition: {x: 664.6, y: 647.8}
   m_SizeDelta: {x: 905.4, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1367685263
@@ -36286,7 +36285,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 232.6}
+  m_AnchoredPosition: {x: 0, y: 361.6}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1902507504
@@ -36312,7 +36311,9 @@ MonoBehaviour:
   m_text: 'Signal Flow
 
 
-    Level 1'
+    Level 1: Basic Left/Right Output
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

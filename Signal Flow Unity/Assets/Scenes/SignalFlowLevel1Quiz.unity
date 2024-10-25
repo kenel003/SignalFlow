@@ -3138,7 +3138,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 579, y: 72}
+  m_AnchoredPosition: {x: 579, y: 93.5}
   m_SizeDelta: {x: 945.8, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &175699065
@@ -18732,7 +18732,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.8784314}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.8784314}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -19613,9 +19613,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Save a screenshot of this screen and send to your teacher!\n\n\nIf you
-    used 1 or more incorrect controls, feel free to click \u201CRestart\u201D and
-    attempt this quiz again before submitting it."
+  m_text: "Great Job!\nSave a screenshot of this screen and send to your teacher!\n\n\nIf
+    you used 1 or more incorrect controls, feel free to click \u201CRestart\u201D
+    and attempt this quiz again before submitting it."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ea7e3b202ff35fa4cb0b3fdbce77bacf, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: ea7e3b202ff35fa4cb0b3fdbce77bacf, type: 2}
@@ -19708,7 +19708,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 650.34674, y: 749}
+  m_AnchoredPosition: {x: 650.34674, y: 797.6}
   m_SizeDelta: {x: 1131.7, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &996866288
@@ -20091,7 +20091,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 650.34674, y: 588.5}
+  m_AnchoredPosition: {x: 650.34674, y: 574}
   m_SizeDelta: {x: 905.4, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1016383449
@@ -22090,7 +22090,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1142665478
 Transform:
   m_ObjectHideFlags: 0
@@ -33579,7 +33579,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1756220880
 Transform:
   m_ObjectHideFlags: 0
