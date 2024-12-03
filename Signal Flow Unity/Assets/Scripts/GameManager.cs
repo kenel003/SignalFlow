@@ -24,7 +24,7 @@ public class GameManager : MonoBehaviour
     public bool isQuizMode = false;
     public TextMeshProUGUI incorrectItemsText;
     public bool guiUp = true;
-    public Toggle iHaveRead1, iHaveRead2;
+    //public Toggle iHaveRead1, iHaveRead2;
     void Start()
     {
         
@@ -33,7 +33,7 @@ public class GameManager : MonoBehaviour
         if (SceneManager.GetActiveScene().name == "SignalFlowLevel1Quiz")
         {
             isQuizMode = true;
-            guiUp = false;
+            guiUp = true;
         }
     }
 
@@ -176,12 +176,12 @@ public class GameManager : MonoBehaviour
 
     public void Start2()
     {
-        if (iHaveRead1.isOn || iHaveRead2.isOn)
-        {
+        //if (iHaveRead1.isOn || iHaveRead2.isOn)
+        //{
             instructionScreen.gameObject.SetActive(false);
             guiUp = false;
             selected.gameObject.SetActive(true);
-        }
+        //}
        
     }//Ends instruction screen. Starts selected object text. On Button press.
 
