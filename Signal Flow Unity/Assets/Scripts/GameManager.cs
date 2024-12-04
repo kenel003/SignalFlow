@@ -34,7 +34,7 @@ public class GameManager : MonoBehaviour
         if (SceneManager.GetActiveScene().name == "SignalFlowLevel1Quiz")
         {
             isQuizMode = true;
-            guiUp = true;
+            //guiUp = true;
         }
     }
 
@@ -170,18 +170,17 @@ public class GameManager : MonoBehaviour
 
     public void Start1()
     {
-        guiUp = true;
         titleScreen.gameObject.SetActive(false);
-        instructionScreen.gameObject.SetActive(true);
-    }//Goes through starts screen and instruction screen. On Button press.
+        
+    }
 
     public void Start2()
     {
         //if (iHaveRead1.isOn || iHaveRead2.isOn)
         //{
-            instructionScreen.gameObject.SetActive(false);
-            guiUp = false;
-            selected.gameObject.SetActive(true);
+            //instructionScreen.gameObject.SetActive(false);
+           // guiUp = false;
+            //selected.gameObject.SetActive(true);
         //}
        
     }//Ends instruction screen. Starts selected object text. On Button press.
