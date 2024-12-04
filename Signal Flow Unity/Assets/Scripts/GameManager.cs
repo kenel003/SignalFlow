@@ -24,6 +24,7 @@ public class GameManager : MonoBehaviour
     public bool isQuizMode = false;
     public TextMeshProUGUI incorrectItemsText;
     public bool guiUp = true;
+    public GameObject readTheDirections;
     //public Toggle iHaveRead1, iHaveRead2;
     void Start()
     {
@@ -194,4 +195,10 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene("SignalFlowLevel1Practice");
     }//If the restart button is pressed, restart the game.
+
+    public void NeedHelpButton()
+    {
+        guiUp = true;
+        readTheDirections.SetActive(true);
+    }
 }
